@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+		<link rel="shortcut icon" href="./assets/images/brand/favicon.png"/>
+		<link rel="apple-touch-icon" href="./assets/images/brand/webclip.png"/>
+
+		<link rel="stylesheet" href="./assets/css/app.css" type="text/css" media="all">
+
+		<link rel="stylesheet" href="./assets/css/libraries/normalize.css" type="text/css" media="all">
+
+		<title>Michael Vuolo | Portfolio</title>
+	</head>
+    
+	<body>
+
+        <div class="container" style="height: 100vh;">
+            <div style="z-index: 1;">
+                <a href="https://twitter.com/michaelvuolo_" style="text-decoration: none;">
+                <div class="name">@michaelvuolo_</div>
+                </a>
+            </div>
+            <div class="break"></div>
+            <div class="row">
+                <a href="https://lixir.software">
+                    <div class="item">
+                        <img data-tilt class="tilt" src="./assets/images/projects/lixir.png" style="width: 500px; height: auto; border: 1px solid white;">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <script src="./assets/scripts/libraries/jquery.js"></script>
+        <script src="./assets/scripts/libraries/tilt.js"></script>
+        <script src="./assets/scripts/libraries/baffle.js"></script>
+        <script src="./assets/scripts/libraries/three.js"></script>
+        <script src="./assets/scripts/libraries/birds.js"></script>
+
+        <script>
+            VANTA.BIRDS({
+                el: "body",
+                mouseControls: false,
+                touchControls: false,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                speedLimit: 3.00,
+                separation: 100.00,
+                alignment: 36.00,
+                cohesion: 1.00,
+                quantity: 3.00,
+                color1: 0x1bed,
+            });
+        </script>
+
+        <script>
+            const text = baffle('.name');
+            text.set({
+                characters: '░▒░ ░██░> ████▓ >█> ░/█>█ ██░░ █<▒ ▓██░ ░/░▒',
+                speed: 110
+            });
+
+            text.start();
+            text.reveal(2000);
+        </script>
+
+	</body>
+</html>

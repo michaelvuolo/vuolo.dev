@@ -1,0 +1,59 @@
+body, html {
+    background-color: #07192F;
+    font-family: "Lucida Console", Monaco, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    flex: 1 0 auto;
+
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    justify-content: center;
+    flex-flow: row wrap;
+
+    z-index: 1;
+}
+
+.item {
+    padding: 4rem;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.name {
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    font-size: 31px;
+}
+
+a {
+    color: rgb(80, 155, 233);
+}
+
+.tilt {
+    border-radius: 25px;
+    max-width: 100%;
+    height: auto;
+}
